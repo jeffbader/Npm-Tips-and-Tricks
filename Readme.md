@@ -215,9 +215,9 @@ config: {
   "port": 1337
 },  
 scripts: {  
-  "poststart" : "npm_run_all buld server",
+  "poststart" : "npm-run-all buld server",
   "build" : "command to do the build, see examples above",
-  "server" : "npm_run_all server:*",  
+  "server" : "npm-run-all server:*",  
   "server:start": "http-server public/$npm_package_version -p $npm_package_config_port",
   "server:launch": "open http://localhost:$npm_package_config_port/index.html",
 }  
